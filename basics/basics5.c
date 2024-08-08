@@ -31,7 +31,7 @@ int main()
     struct Person person1;
     printf("name: %s\n", person1.name); // uninitialized so you get garbage values at this point.
 
-    strcpy(person1.name, "Nisha"); // we have to assing like this becasue once defined, the arrays in C can't be reassingned the values
+    strcpy(person1.name, "Nisha"); // we have to assign like this because once defined, the arrays in C can't be reassigned the values
     printf("name: %s\n", person1.name);
 
     // char name[20];
@@ -42,7 +42,7 @@ int main()
 
     // when we use strcut type with typedef the instance creation syntax gets easier. 
     // for example: instantiating the notebook struct 
-    Notebook myNotebook = {100, 30.0};
+    Notebook myNotebook = {100, 30.0}; 
     printf("myNotebook pages: %d and price : %.1f\n", myNotebook.pages, myNotebook.price);
     
     myNotebook.pages = 120;
